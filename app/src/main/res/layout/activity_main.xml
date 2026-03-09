@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingHorizontal="10dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -35,14 +36,13 @@
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clear"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/Red"
-        android:background="@drawable/box"
-        />
+        android:text="Clear" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
@@ -52,45 +52,59 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MINIMUM TEMP:"
+            android:textColor="@color/Blue"
+
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etMinTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/Blue"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
+            android:layout_height="match_parent"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MAXIMUM TEMP:"
+            android:textColor="@color/Red"
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etMaxTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
@@ -100,13 +114,16 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etHumidity"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
@@ -116,13 +133,15 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etWeather"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
@@ -132,8 +151,10 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/etDescription"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingHorizontal="10sp"
             />
     </LinearLayout>
 </LinearLayout>
