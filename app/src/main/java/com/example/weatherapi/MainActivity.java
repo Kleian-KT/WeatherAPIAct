@@ -31,15 +31,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialize(){
-        etCity = findViewById(R.id.etCity);
+        etCity = findViewById(R.id.city);
         etTemp = findViewById(R.id.etTemp);
         etMinTemp = findViewById(R.id.etMinTemp);
         etMaxTemp = findViewById(R.id.etMaxTemp);
         etHumidity = findViewById(R.id.etHumidity);
         etWeather = findViewById(R.id.etWeather);
         etDescription = findViewById(R.id.etDescription);
-        checkBtn = findViewById(R.id.checkBtn);
-        clearBtn = findViewById(R.id.clearBtn);
+        checkBtn = findViewById(R.id.check);
+        clearBtn = findViewById(R.id.clear);
 
         checkBtn.setOnClickListener(v -> {
 
