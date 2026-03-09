@@ -84,10 +84,19 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             JSONObject main = response.getJSONObject("main");
 
-                            String temp = main.getString("temp");
-                            String minTemp = main.getString("temp_min");
-                            String maxTemp = main.getString("temp_max");
-                            String humidity = main.getString("humidity");
+                            double tempK = main.getDouble("temp");
+                            double minTempK = main.getDouble("temp_min");
+                            double maxTempK = main.getDouble("temp_max");
+
+                            double tempC = tempK - 273.15;
+                            double minTempC = minTempK - 273.15;
+                            double maxTempC = maxTempK - 273.15;
+
+                            String temp = String.format("%.2f °C", tempC);
+                            String minTemp = String.format("%.2f °C", minTempC);
+                            String maxTemp = String.format("%.2f °C", maxTempC);
+                            String humidity = main.getString("humidity") + " %";
+
 
                             String weather = response
                                     .getJSONArray("weather")
